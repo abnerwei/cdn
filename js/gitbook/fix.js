@@ -5,8 +5,8 @@ for (var i = 0; i < elems.length; i++) {
 }
 
 document.onscroll = function (element) {
-  var leftSidebar = document.querySelector('div[class*="contentNavigation"]')[0];
-  var rightSidebar = document.querySelector('div[class*="pageSide"]')[0];
+  var leftSidebar = document.querySelector('div[class*="-sidebar-"]')[0];
+  var rightSidebar = document.querySelector('div[class*="-tocWrapper-"]')[0];
   if (document.scrollingElement.scrollTop >= 80) {
     if (leftSidebar) {
       leftSidebar.style.position = 'fixed';
