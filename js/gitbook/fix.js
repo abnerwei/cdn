@@ -4,6 +4,28 @@ for (var i = 0; i < elems.length; i++) {
   elems[i].style.height = '64px';
 }
 
+logoSpan = document.createElement("span")
+logoInner = document.createElement("span")
+logoSpan.appendChild(logoInner)
+
+var role = document.createAttribute("role");
+role.nodeValue="img";
+var alt = document.createAttribute("alt");
+alt.nodeValue="img";
+var title = document.createAttribute("title");
+title.nodeValue=":ledger:";
+var ariaLabel = document.createAttribute("aria-label");
+ariaLabel.nodeValue=":ledger:";
+
+logoSpan.className = "wrapper-c9de902e"
+logoInner.className = "emojione emojione-40-objects _1f4d2 emoji-64354ccb"
+logoInner.getAttributeNode("style").value="transform: translate(-50%, -55%) scale(0.75);"
+logoSpan.style.width = '30px'
+logoSpan.style.height = '30px'
+logoInner.innerHtml = emojione.shortnameToUnicode('1f4d2')
+var logoContainer = document.querySelector('div[class*="-logoContainer-"]')[0];
+logoContainer.appendChild(logoSpan)
+
 document.onscroll = function (element) {
   var leftSidebar = document.querySelector('div[class*="-sidebar-"]')[0];
   var rightSidebar = document.querySelector('div[class*="-tocWrapper-"]')[0];
