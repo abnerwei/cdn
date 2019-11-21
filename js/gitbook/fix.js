@@ -19,7 +19,7 @@ ariaLabel.nodeValue=":ledger:";
 
 logoSpan.className = "wrapper-c9de902e"
 logoInner.className = "emojione emojione-40-objects _1f4d2 emoji-64354ccb"
-logoInner.getAttributeNode("style").value="transform: translate(-50%, -55%) scale(0.75);"
+logoInner.setAttribute("style","transform: translate(-50%, -55%) scale(0.75);")
 logoSpan.style.width = '30px'
 logoSpan.style.height = '30px'
 logoInner.innerHtml = emojione.shortnameToUnicode('1f4d2')
